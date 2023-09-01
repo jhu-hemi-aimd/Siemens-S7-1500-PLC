@@ -1,4 +1,7 @@
-baseURL = 'http://jhu-hemi-aimd.github.io/'
+baseURL = 'http://jhu-hemi-aimd.github.io/Siemens-S7-1500-PLC/'
+canonifyURLs = true
+relativeURLs = true
+
 languageCode = 'en-us'
 title = 'Siemens S7 1500 PLC Demo'
 
@@ -81,7 +84,7 @@ theme = 'hugo-theme-relearn'
   additionalContentLanguage = [ "en" ]
   # If set to true, no index.html will be appended to prettyURLs; this will cause pages not
   # to be servable from the file system
-  disableExplicitIndexURLs = false
+  disableExplicitIndexURLs = true
   # For external links you can define how they are opened in your browser; this setting will only be applied to the content area but not the shortcut menu
   externalLinkTarget = "_blank"
   # Override default values for image effects, you can even add your own arbitrary effects to the list
@@ -92,4 +95,6 @@ theme = 'hugo-theme-relearn'
 
 # For search functionality
 [outputs]
-    home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE"]
+    home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE", "PRINT"]
+    section = ["HTML", "RSS", "PRINT"]
+    page = ["HTML", "RSS", "PRINT"]
