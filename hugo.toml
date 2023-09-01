@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://jhu-hemi-aimd.github.io/'
 languageCode = 'en-us'
 title = 'Siemens S7 1500 PLC Demo'
 
